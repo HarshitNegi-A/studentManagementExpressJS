@@ -4,6 +4,7 @@ const db=require('./utils/db-connection')
 const studentRouter=require('./routes/studentRoutes')
 
 const studentModel=require('./models/students')
+require('./models')
 
 app.use(express.json())
 app.use('/students',studentRouter)
